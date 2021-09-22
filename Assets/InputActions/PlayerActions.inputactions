@@ -1,5 +1,5 @@
 {
-    "name": "Player",
+    "name": "PlayerActions",
     "maps": [
         {
             "name": "Movement",
@@ -20,6 +20,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Run",
+                    "type": "Button",
+                    "id": "272e6193-d3dc-45d0-a398-b4a5845d8962",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold"
                 }
             ],
             "bindings": [
@@ -141,6 +149,44 @@
                     "processors": "",
                     "groups": "PCMasterRace",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "42b492ed-99c5-4e38-a917-bff34e3888d5",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PCMasterRace",
+                    "action": "Run",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Mouse",
+            "id": "303cb78d-7be9-4819-80fc-f230abfff657",
+            "actions": [
+                {
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "f477e0d7-6abf-4cc9-b806-3efb5b0c8ba6",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "fadb0ec3-b78a-4ca4-b9bc-ff628a1b68bc",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PCMasterRace",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
